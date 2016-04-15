@@ -53,13 +53,13 @@
 
 (defn ama
   "Calculate AMA"
+  ; TODO(pgalvin) finish
   ; α = [(VI * (FC – SC)) + SC] ²
   ; EMA calc
   [vals ratio-length fast-period slow-period]
   (let [f-alpha (ema-basic-alpha fast-period)
         s-alpha (ema-basic-alpha slow-period)]
-    (dotimes [n ratio-length]
-      ))
+    (dotimes [n ratio-length]))
   (/ (direction vals 0 ratio-length) (volatility vals)))
 
 (defn summation
